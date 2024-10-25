@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admiralis Freelances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Admiralis Freelancers</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Client List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="dd.html">writing services</a></li>
+                        <li><a href="#">Web  and graphic Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">development services</a></li>
+                        <li><a href="#">Consultation Services</a></li>
+                        <li><a href="#">Blogging</a></li>
+                        <li><a href="#">Virtual assistance</a></li>
+                        <li><a href="#">transcription</a></li>
+                        <li><a href="#">online tutoring</a></li>
+                        <li><a href="#">Typing jobs</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li class="auth">
+                    <a href="#"><i class="fas fa-user"></i> Sign Up</a>
+                    <a href="#"><i class="fas fa-sign-in-alt"></i> Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Admiralis Freelancers</h1>
+            <p>A platform for professional freelance services.</p>
+            <br><a href="#" class="cta-button">Get Started</a>
+        </section>
+
+        <section class="services-overview">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services to meet your needs.</p>
+            <!-- Service highlights can be added here -->
+        </section>
+    </main>
+<script>
+    // JavaScript to handle dropdown menu interaction
+document.querySelectorAll('.menu li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const dropdown = item.querySelector('.dropdown');
+        if (dropdown) {
+            dropdown.style.display = 'block';
+        }
+    });
+
+    item.addEventListener('mouseleave', () => {
+        const dropdown = item.querySelector('.dropdown');
+        if (dropdown) {
+            dropdown.style.display = 'none';
+        }
+    });
+});
+
+</script>
+    
+
+<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Admiralis Freelances. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
